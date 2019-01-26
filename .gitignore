@@ -1,7 +1,7 @@
 # Directories #
 ###############
-idea/
-node_modules/
+.idea/
+./node_modules/
 jspm_packages/
 lib-cov
 
