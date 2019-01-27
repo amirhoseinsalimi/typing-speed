@@ -1,9 +1,20 @@
 $(() => {
-  $(document).on('keydown', (e) => {
-    const pressedKey = e.which;
+  $(document).on({
+    keydown: (e) => {
+      const pressedKey = e.which;
 
-    $(`[key-code=${pressedKey}]`).css({
-      'background-color': 'blue',
-    });
+      $(`[key-code=${pressedKey}]`).css({
+        'background-color': '#fff',
+        'color': 'tomato',
+      });
+    },
+    keyup: (e) => {
+      const pressedKey = e.which;
+
+      $(`[key-code=${pressedKey}]`).css({
+        'background-color': 'tomato',
+        'color': '#fff',
+      });
+    },
   });
 });

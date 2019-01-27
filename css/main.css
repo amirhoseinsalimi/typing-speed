@@ -37,6 +37,7 @@
   color: #fff;
   font-size: 20px;
   line-height: 60px;
+  transition: background-color 0.3s;
 }
 
 .backspace {
