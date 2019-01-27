@@ -34,7 +34,6 @@ body {
   display: grid;
   grid-template-columns: 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22%;
   grid-template-rows: 20% 20% 20% 20% 20% ;
-  //grid-gap: 5px 7px;
 }
 
 .keyboard > .key {
@@ -42,9 +41,10 @@ body {
   border-radius: 10px;
   text-align: center;
   color: $secondary-color;
-  font-size: 20px;
+  font-size: 18px;
   line-height: $key-height;
   transition: background-color 0.2s;
+  margin: 3px;
 }
 
 .span-3 {
