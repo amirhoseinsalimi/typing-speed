@@ -1,0 +1,18 @@
+{
+  "extends": "airbnb-base",
+
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jquery": true
+  },
+  "rules": {
+    "quote-props": [
+      "error",
+      "consistent-as-needed"
+    ]
+  }
+
+
+}
