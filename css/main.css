@@ -11,11 +11,42 @@
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  border: 1px solid blue;
 }
 
-.keyboard-container {
+.head-section {
+  border: 1px solid red;
+  height: 40vh;
+  padding: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+.head-section .input-container {
+  display: flex;
+  flex-flow: column-reverse wrap;
+  align-items: center;
+  width: 100%;
+}
+.head-section .input-container input {
+  width: 30%;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background: tomato;
+  color: #fff;
+  font-size: 20px;
+  padding: 4px 5px 2px;
+}
+.head-section .input-container input:focus {
+  outline: none;
+}
+
+.keyboard-section {
   width: 90%;
   margin: 0 auto;
+  border: 1px solid green;
 }
 
 .keyboard {

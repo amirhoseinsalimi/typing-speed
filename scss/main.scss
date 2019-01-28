@@ -7,10 +7,6 @@
   box-sizing: border-box;
 }
 
-body {
-
-}
-
 .container {
   background: $primary-color;
   min-height: 100vh;
@@ -18,11 +14,45 @@ body {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  border: 1px solid blue;
 }
 
-.keyboard-container {
+.head-section {
+  border: 1px solid red;
+  height: 40vh;
+  padding: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+
+  .input-container {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-items: center;
+    width: 100%;
+
+    input {
+      width: 30%;
+      border: none;
+      border-bottom: 2px solid $secondary-color;
+      background: $primary-color;
+      color: $secondary-color;
+      font-size: 20px;
+      padding: 4px 5px 2px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.keyboard-section {
   width: 90%;
   margin: 0 auto;
+  border: 1px solid green;
 }
 
 .keyboard {
