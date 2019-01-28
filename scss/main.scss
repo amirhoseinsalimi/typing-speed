@@ -1,11 +1,18 @@
+@import 'variables';
+@import 'mixins';
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+body {
+
+}
+
 .container {
-  background: tomato;
+  background: $primary-color;
   min-height: 100vh;
   display: flex;
   flex-flow: column wrap;
@@ -21,7 +28,7 @@
 .keyboard {
   margin: 0 auto;
   width: 65%;
-  border: 2px solid #fff;
+  border: 2px solid $secondary-color;
   border-radius: 10px;
   height: 250px;
   padding: 10px;
@@ -31,10 +38,10 @@
 }
 
 .keyboard > .key {
-  border: 1px solid #fff;
+  border: 1px solid $secondary-color;
   border-radius: 10px;
   text-align: center;
-  color: #fff;
+  color: $secondary-color;
   font-size: 12px;
   line-height: 30px;
   transition: background-color 0.2s;
@@ -64,13 +71,10 @@
 .span-8 {
   grid-column: span 8;
 }
-
 .span-21 {
   grid-column: span 21;
 }
 
 .ctrl {
-  grid-column: 9/12;
+  grid-column: 9 / 12;
 }
-
-/*# sourceMappingURL=main.css.map */
