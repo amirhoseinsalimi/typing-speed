@@ -1,4 +1,45 @@
 $(() => {
+  let capsLockOn = false;
+  const $userInput = $('#userInput');
+
+  function turnOnShiftMode() {
+    $('div[alt-char]').each(function () {
+      $(this).text($(this).attr('alt-char'));
+    });
+  }
+
+  function turnOffShiftMode() {
+    $('div[char]').each(function () {
+      $(this).text($(this).attr('char'));
+    });
+  }
+
+  function turnOnCapsLock() {
+    $("div[class^='char-'], div[class*=' char-']").each(function () {
+      $(this).text($(this).attr('alt-char'));
+    });
+    capsLockOn = true;
+  }
+
+  function turnOffCapsLock() {
+    $("div[class^='char-'], div[class*=' char-']").each(function () {
+      $(this).text($(this).attr('char'));
+    });
+    capsLockOn = false;
+  }
+
+  $userInput.on({
+    keyup: (e) => {
+      if (e.originalEvent.getModifierState('CapsLock')) {
+        capsLockOn = true;
+        turnOnCapsLock();
+      } else {
+        capsLockOn = false;
+        turnOffCapsLock();
+      }
+    },
+  });
+
   $(document).on({
     keydown: (e) => {
       const pressedKey = e.which;
@@ -9,9 +50,13 @@ $(() => {
       });
 
       if (pressedKey === 16) {
-        $('div[alt-char]').each(function () {
-          $(this).text($(this).attr('alt-char'));
-        });
+        turnOnShiftMode();
+      } else if (pressedKey === 20) {
+        if (capsLockOn) {
+          turnOffCapsLock();
+        } else {
+          turnOnCapsLock();
+        }
       }
     },
     keyup: (e) => {
@@ -23,9 +68,7 @@ $(() => {
       });
 
       if (pressedKey === 16) {
-        $('div[char]').each(function () {
-          $(this).text($(this).attr('char'));
-        });
+        turnOffShiftMode();
       }
     },
   });
