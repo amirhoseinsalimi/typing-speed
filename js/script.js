@@ -18,6 +18,12 @@ $(() => {
     $("div[class^='char-'], div[class*=' char-']").each(function () {
       $(this).text($(this).attr('alt-char'));
     });
+
+    $('.caps-lock-indicator').css({
+      'border': 'none',
+      'background-color': '#179100',
+    });
+
     capsLockOn = true;
   }
 
@@ -25,6 +31,12 @@ $(() => {
     $("div[class^='char-'], div[class*=' char-']").each(function () {
       $(this).text($(this).attr('char'));
     });
+
+    $('.caps-lock-indicator').css({
+      'border': '1px solid #fff',
+      'background-color': 'transparent',
+    });
+
     capsLockOn = false;
   }
 
