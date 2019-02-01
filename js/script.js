@@ -2,42 +2,56 @@ $(() => {
   let capsLockOn = false;
   const $userInput = $('#userInput');
 
-  function turnOnShiftMode() {
-    $('div[alt-char]').each(function () {
+  /**
+   *
+   * @param toggleIndicator: defaults to true. To take control of the CapsLockIndicator
+   */
+  function turnOnCapsLock(toggleIndicator = true) {
+    $("div[class^='letter-'], div[class*=' letter-']").each(function () {
       $(this).text($(this).attr('alt-char'));
     });
+
+    if (toggleIndicator) {
+      $('.caps-lock-indicator').css({
+        'border': 'none',
+        'background-color': '#179100',
+      });
+
+      capsLockOn = true;
+    }
+  }
+
+  function turnOffCapsLock(toggleIndicator = true) {
+    $('.letter').each(function () {
+      $(this).text($(this).attr('char'));
+    });
+
+    if (toggleIndicator) {
+      $('.caps-lock-indicator').css({
+        'border': '1px solid #fff',
+        'background-color': 'transparent',
+      });
+
+      capsLockOn = false;
+    }
+  }
+
+  function turnOnShiftMode() {
+    $('div.key:not(".letter")').each(function () {
+      $(this).text($(this).attr('alt-char'));
+    });
+
+    turnOnCapsLock(false);
   }
 
   function turnOffShiftMode() {
-    $('div[char]').each(function () {
-      $(this).text($(this).attr('char'));
-    });
-  }
-
-  function turnOnCapsLock() {
-    $("div[class^='char-'], div[class*=' char-']").each(function () {
-      $(this).text($(this).attr('alt-char'));
-    });
-
-    $('.caps-lock-indicator').css({
-      'border': 'none',
-      'background-color': '#179100',
-    });
-
-    capsLockOn = true;
-  }
-
-  function turnOffCapsLock() {
-    $("div[class^='char-'], div[class*=' char-']").each(function () {
+    $('div.key:not(".letter")').each(function () {
       $(this).text($(this).attr('char'));
     });
 
-    $('.caps-lock-indicator').css({
-      'border': '1px solid #fff',
-      'background-color': 'transparent',
-    });
-
-    capsLockOn = false;
+    if (!capsLockOn) {
+      turnOffCapsLock(false);
+    }
   }
 
   $userInput.on({
