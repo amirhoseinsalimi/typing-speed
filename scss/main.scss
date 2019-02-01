@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   background: $primary-color;
   min-height: 100vh;
@@ -14,6 +18,10 @@
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+}
+
+.small-vp-notice {
+  display: none;
 }
 
 .head-section {
@@ -48,12 +56,12 @@
 }
 
 .keyboard-section {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 
   .keyboard {
     margin: 0 auto;
-    width: 65%;
+    max-width: 700px;
     border: 2px solid $secondary-color;
     border-radius: 10px;
     height: 250px;
@@ -65,6 +73,10 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    @media screen and (max-width: 699px) {
+      display: none;
+    }
 
     .key {
       border: 1px solid $secondary-color;
@@ -122,6 +134,31 @@
       width: 7px;
       background: transparent;
       border: 1px solid $solid-white;
+    }
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .small-vp-notice {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+
+    & span {
+      font: {
+        size: 20px;
+        weight: bolder;
+      };
+      text-align: justify;
+      color: black;
     }
   }
 }
