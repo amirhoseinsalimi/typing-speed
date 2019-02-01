@@ -14,11 +14,9 @@
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  border: 1px solid blue;
 }
 
 .head-section {
-  border: 1px solid red;
   height: 40vh;
   padding: 10px;
   display: flex;
@@ -52,7 +50,6 @@
 .keyboard-section {
   width: 90%;
   margin: 0 auto;
-  border: 1px solid green;
 
   .keyboard {
     margin: 0 auto;
