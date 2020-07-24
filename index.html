@@ -1,89 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Document</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="small-vp-notice">
-      <span>Please enter this website with a larger tablet or a desktop PC</span>
+        <span>Please enter this website with a larger tablet or a desktop PC</span>
     </div>
     <div class="container">
-      <div class="head-section">
-        <div class="input-container">
-          <input type="text" id="userInput" name="userInput">
+        <div class="head-section">
+            <div class="input-container">
+                <input type="text" id="userInput" name="userInput">
+            </div>
         </div>
-      </div>
-      <div class="keyboard-section">
-        <div class="keyboard">
-          <div class="key span-3 backtick" char="`" alt-char="~" key-code="192">`</div>
-          <div class="key span-3 num-1" char="1" alt-char="!" key-code="49">1</div>
-          <div class="key span-3 num-2" char="2" alt-char="@" key-code="50">2</div>
-          <div class="key span-3 num-3" char="3" alt-char="#" key-code="51">3</div>
-          <div class="key span-3 num-4" char="4" alt-char="$" key-code="52">4</div>
-          <div class="key span-3 num-5" char="5" alt-char="%" key-code="53">5</div>
-          <div class="key span-3 num-6" char="6" alt-char="^" key-code="54">6</div>
-          <div class="key span-3 num-7" char="7" alt-char="&" key-code="55">7</div>
-          <div class="key span-3 num-8" char="8" alt-char="*" key-code="56">8</div>
-          <div class="key span-3 num-9" char="9" alt-char="(" key-code="57">9</div>
-          <div class="key span-3 num-0" char="0" alt-char=")" key-code="48">0</div>
-          <div class="key span-3 minus-underscore" char="-" alt-char="_" key-code="189">-</div>
-          <div class="key span-3 equal-plus" char="=" alt-char="+" key-code="187">=</div>
-          <div class="key span-6 backspace" key-code="8">backspace</div>
-          <div class="key span-4 tab" key-code="9">tab</div>
-          <div class="key span-3 letter letter-q" char="q" alt-char="Q" key-code="81">q</div>
-          <div class="key span-3 letter letter-w" char="w" alt-char="W" key-code="87">w</div>
-          <div class="key span-3 letter letter-e" char="e" alt-char="E" key-code="69">e</div>
-          <div class="key span-3 letter letter-r" char="r" alt-char="R" key-code="82">r</div>
-          <div class="key span-3 letter letter-t" char="t" alt-char="T" key-code="84">t</div>
-          <div class="key span-3 letter letter-y" char="y" alt-char="Y" key-code="89">y</div>
-          <div class="key span-3 letter letter-u" char="u" alt-char="U" key-code="85">u</div>
-          <div class="key span-3 letter letter-i" char="i" alt-char="I" key-code="73">i</div>
-          <div class="key span-3 letter letter-o" char="o" alt-char="O" key-code="79">o</div>
-          <div class="key span-3 letter letter-p" char="p" alt-char="P" key-code="80">p</div>
-          <div class="key span-3 symbol-open-bracket" char="[" alt-char="{" key-code="219">[</div>
-          <div class="key span-3 symbol-close-bracket" char="]" alt-char="}" key-code="221">]</div>
-          <div class="key span-5 symbol-backslash" char="\" alt-char="|" key-code="220">\</div>
-          <div class="key span-5 caps-lock" key-code="20"><span class="caps-lock-indicator"></span>caps lock</div>
-          <div class="key span-3 letter letter-a" char="a" alt-char="A" key-code="65">a</div>
-          <div class="key span-3 letter letter-s" char="s" alt-char="S" key-code="83">s</div>
-          <div class="key span-3 letter letter-d" char="d" alt-char="D" key-code="68">d</div>
-          <div class="key span-3 letter letter-f" char="f" alt-char="F" key-code="70">f</div>
-          <div class="key span-3 letter letter-g" char="g" alt-char="G" key-code="71">g</div>
-          <div class="key span-3 letter letter-h" char="h" alt-char="H" key-code="72">h</div>
-          <div class="key span-3 letter letter-j" char="j" alt-char="J" key-code="74">j</div>
-          <div class="key span-3 letter letter-k" char="k" alt-char="K" key-code="75">k</div>
-          <div class="key span-3 letter letter-l" char="l" alt-char="L" key-code="76">l</div>
-          <div class="key span-3 symbol-semi-colon" char=";" alt-char=":" key-code="186">;</div>
-          <div class="key span-3 symbol-quote" char="'" alt-char='"' key-code="222">'</div>
-          <div class="key span-7 enter" key-code="13">enter</div>
-          <div class="key span-7 shift-left" key-code="16">shift</div>
-          <div class="key span-3 letter letter-z" char="z" alt-char="Z" key-code="90">z</div>
-          <div class="key span-3 letter letter-x" char="x" alt-char="X" key-code="88">x</div>
-          <div class="key span-3 letter letter-c" char="c" alt-char="C" key-code="67">c</div>
-          <div class="key span-3 letter letter-v" char="v" alt-char="V" key-code="86">v</div>
-          <div class="key span-3 letter letter-b" char="b" alt-char="B" key-code="66">b</div>
-          <div class="key span-3 letter letter-n" char="n" alt-char="N" key-code="78">n</div>
-          <div class="key span-3 letter letter-m" char="m" alt-char="M" key-code="77">m</div>
-          <div class="key span-3 symbol-comma" char="," alt-char="<" key-code="188">,</div>
-          <div class="key span-3 symbol-dot" char="." alt-char=">" key-code="190">.</div>
-          <div class="key span-3 symbol-forwardslash" char="/" alt-char="?" key-code="191">/</div>
-          <div class="key span-8 shift-right" key-code="">shift</div>
-          <div class="key span-4 ctrl" key-code="17">ctrl</div>
-          <div class="key span-21 space" key-code="32">space</div>
-          <div class="key span-3 alt" key-code="18">alt</div>
+        <div class="keyboard-section">
+            <div class="keyboard">
+                <div class="key span-3 backtick" char="`" alt-char="~" key-code="192">`</div>
+                <div class="key span-3 num-1" char="1" alt-char="!" key-code="49">1</div>
+                <div class="key span-3 num-2" char="2" alt-char="@" key-code="50">2</div>
+                <div class="key span-3 num-3" char="3" alt-char="#" key-code="51">3</div>
+                <div class="key span-3 num-4" char="4" alt-char="$" key-code="52">4</div>
+                <div class="key span-3 num-5" char="5" alt-char="%" key-code="53">5</div>
+                <div class="key span-3 num-6" char="6" alt-char="^" key-code="54">6</div>
+                <div class="key span-3 num-7" char="7" alt-char="&" key-code="55">7</div>
+                <div class="key span-3 num-8" char="8" alt-char="*" key-code="56">8</div>
+                <div class="key span-3 num-9" char="9" alt-char="(" key-code="57">9</div>
+                <div class="key span-3 num-0" char="0" alt-char=")" key-code="48">0</div>
+                <div class="key span-3 minus-underscore" char="-" alt-char="_" key-code="189">-</div>
+                <div class="key span-3 equal-plus" char="=" alt-char="+" key-code="187">=</div>
+                <div class="key span-6 backspace" key-code="8">backspace</div>
+                <div class="key span-4 tab" key-code="9">tab</div>
+                <div class="key span-3 letter letter-q" char="q" alt-char="Q" key-code="81">q</div>
+                <div class="key span-3 letter letter-w" char="w" alt-char="W" key-code="87">w</div>
+                <div class="key span-3 letter letter-e" char="e" alt-char="E" key-code="69">e</div>
+                <div class="key span-3 letter letter-r" char="r" alt-char="R" key-code="82">r</div>
+                <div class="key span-3 letter letter-t" char="t" alt-char="T" key-code="84">t</div>
+                <div class="key span-3 letter letter-y" char="y" alt-char="Y" key-code="89">y</div>
+                <div class="key span-3 letter letter-u" char="u" alt-char="U" key-code="85">u</div>
+                <div class="key span-3 letter letter-i" char="i" alt-char="I" key-code="73">i</div>
+                <div class="key span-3 letter letter-o" char="o" alt-char="O" key-code="79">o</div>
+                <div class="key span-3 letter letter-p" char="p" alt-char="P" key-code="80">p</div>
+                <div class="key span-3 symbol-open-bracket" char="[" alt-char="{" key-code="219">[</div>
+                <div class="key span-3 symbol-close-bracket" char="]" alt-char="}" key-code="221">]</div>
+                <div class="key span-5 symbol-backslash" char="\" alt-char="|" key-code="220">\</div>
+                <div class="key span-5 caps-lock" key-code="20"><span class="caps-lock-indicator"></span>caps lock</div>
+                <div class="key span-3 letter letter-a" char="a" alt-char="A" key-code="65">a</div>
+                <div class="key span-3 letter letter-s" char="s" alt-char="S" key-code="83">s</div>
+                <div class="key span-3 letter letter-d" char="d" alt-char="D" key-code="68">d</div>
+                <div class="key span-3 letter letter-f" char="f" alt-char="F" key-code="70">f</div>
+                <div class="key span-3 letter letter-g" char="g" alt-char="G" key-code="71">g</div>
+                <div class="key span-3 letter letter-h" char="h" alt-char="H" key-code="72">h</div>
+                <div class="key span-3 letter letter-j" char="j" alt-char="J" key-code="74">j</div>
+                <div class="key span-3 letter letter-k" char="k" alt-char="K" key-code="75">k</div>
+                <div class="key span-3 letter letter-l" char="l" alt-char="L" key-code="76">l</div>
+                <div class="key span-3 symbol-semi-colon" char=";" alt-char=":" key-code="186">;</div>
+                <div class="key span-3 symbol-quote" char="'" alt-char='"' key-code="222">'</div>
+                <div class="key span-7 enter" key-code="13">enter</div>
+                <div class="key span-7 shift-left" key-code="16">shift</div>
+                <div class="key span-3 letter letter-z" char="z" alt-char="Z" key-code="90">z</div>
+                <div class="key span-3 letter letter-x" char="x" alt-char="X" key-code="88">x</div>
+                <div class="key span-3 letter letter-c" char="c" alt-char="C" key-code="67">c</div>
+                <div class="key span-3 letter letter-v" char="v" alt-char="V" key-code="86">v</div>
+                <div class="key span-3 letter letter-b" char="b" alt-char="B" key-code="66">b</div>
+                <div class="key span-3 letter letter-n" char="n" alt-char="N" key-code="78">n</div>
+                <div class="key span-3 letter letter-m" char="m" alt-char="M" key-code="77">m</div>
+                <div class="key span-3 symbol-comma" char="," alt-char="<" key-code="188">,</div>
+                <div class="key span-3 symbol-dot" char="." alt-char=">" key-code="190">.</div>
+                <div class="key span-3 symbol-forwardslash" char="/" alt-char="?" key-code="191">/</div>
+                <div class="key span-8 shift-right" key-code="">shift</div>
+                <div class="key span-4 ctrl" key-code="17">ctrl</div>
+                <div class="key span-21 space" key-code="32">space</div>
+                <div class="key span-3 alt" key-code="18">alt</div>
+            </div>
         </div>
-      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script>!window.jQuery && console.log("CDN isn't available") && document.write('<script src="js/jquery-3.3.1.min.js"><\/script>')</script>
+    <script>
+        !window.jQuery && console.log("CDN isn't available") && document.write('<script src="js/jquery-3.3.1.min.js"><\/script>')
+    </script>
     <script src="js/script.js"></script>
-  </body>
+</body>
+
 </html>

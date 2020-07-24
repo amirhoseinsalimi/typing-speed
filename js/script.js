@@ -4,6 +4,7 @@ $(() => {
 
     $(document).on('click', (e) => {
         if (e.target !== document.getElementsByTagName('input')[0]) {
+            e.preventDefault();
             $userInput.focus();
         }
     });

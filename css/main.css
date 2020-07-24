@@ -1,146 +1,163 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 .container {
-  background: tomato;
-  min-height: 100vh;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
+    background: tomato;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .small-vp-notice {
-  display: none;
+    display: none;
 }
 
 .head-section {
-  height: 40vh;
-  padding: 10px;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
-  width: 90%;
+    height: 40vh;
+    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
 }
+
 .head-section .input-container {
-  display: flex;
-  flex-flow: column-reverse wrap;
-  align-items: center;
-  width: 100%;
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-items: center;
+    width: 100%;
 }
+
 .head-section .input-container input {
-  width: 30%;
-  border: none;
-  border-bottom: 2px solid #fff;
-  background: tomato;
-  color: #fff;
-  font-size: 20px;
-  padding: 4px 5px 2px;
+    width: 30%;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: tomato;
+    color: #fff;
+    font-size: 20px;
+    padding: 4px 5px 2px;
 }
+
 .head-section .input-container input:focus {
-  outline: none;
+    outline: none;
 }
 
 .keyboard-section {
-  width: 100%;
-  margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
 }
+
 .keyboard-section .keyboard {
-  margin: 0 auto;
-  max-width: 700px;
-  border: 2px solid #fff;
-  border-radius: 10px;
-  height: 250px;
-  padding: 10px;
-  display: grid;
-  grid-template-columns: 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-@media screen and (max-width: 699px) {
-  .keyboard-section .keyboard {
-    display: none;
-  }
-}
-.keyboard-section .keyboard .key {
-  border: 1px solid #fff;
-  border-radius: 10px;
-  text-align: center;
-  color: #fff;
-  font-size: 12px;
-  line-height: 35px;
-  transition: background-color 0.2s;
-  margin: 3px;
-}
-.keyboard-section .keyboard .span-3 {
-  grid-column: span 3;
-}
-.keyboard-section .keyboard .span-4 {
-  grid-column: span 4;
-}
-.keyboard-section .keyboard .span-5 {
-  grid-column: span 5;
-}
-.keyboard-section .keyboard .span-6 {
-  grid-column: span 6;
-}
-.keyboard-section .keyboard .span-7 {
-  grid-column: span 7;
-}
-.keyboard-section .keyboard .span-8 {
-  grid-column: span 8;
-}
-.keyboard-section .keyboard .span-21 {
-  grid-column: span 21;
-}
-.keyboard-section .keyboard .ctrl {
-  grid-column: 9/12;
-}
-.keyboard-section .keyboard .caps-lock {
-  position: relative;
-}
-.keyboard-section .keyboard .caps-lock .caps-lock-indicator {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  border-radius: 50%;
-  height: 7px;
-  width: 7px;
-  background: transparent;
-  border: 1px solid #fff;
+    margin: 0 auto;
+    max-width: 700px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    height: 250px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22% 2.22%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 @media screen and (max-width: 699px) {
-  .small-vp-notice {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: white;
-    width: 100vw;
-    height: 100vh;
-    z-index: 10;
-  }
-  .small-vp-notice span {
-    font-size: 20px;
-    font-weight: bolder;
-    text-align: justify;
-    color: black;
-  }
+    .keyboard-section .keyboard {
+        display: none;
+    }
 }
+
+.keyboard-section .keyboard .key {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    line-height: 35px;
+    transition: background-color 0.2s;
+    margin: 3px;
+}
+
+.keyboard-section .keyboard .span-3 {
+    grid-column: span 3;
+}
+
+.keyboard-section .keyboard .span-4 {
+    grid-column: span 4;
+}
+
+.keyboard-section .keyboard .span-5 {
+    grid-column: span 5;
+}
+
+.keyboard-section .keyboard .span-6 {
+    grid-column: span 6;
+}
+
+.keyboard-section .keyboard .span-7 {
+    grid-column: span 7;
+}
+
+.keyboard-section .keyboard .span-8 {
+    grid-column: span 8;
+}
+
+.keyboard-section .keyboard .span-21 {
+    grid-column: span 21;
+}
+
+.keyboard-section .keyboard .ctrl {
+    grid-column: 9/12;
+}
+
+.keyboard-section .keyboard .caps-lock {
+    position: relative;
+}
+
+.keyboard-section .keyboard .caps-lock .caps-lock-indicator {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 50%;
+    height: 7px;
+    width: 7px;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+@media screen and (max-width: 699px) {
+    .small-vp-notice {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: white;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+    }
+    .small-vp-notice span {
+        font-size: 20px;
+        font-weight: bolder;
+        text-align: justify;
+        color: black;
+    }
+}
+
 
 /*# sourceMappingURL=main.css.map */
